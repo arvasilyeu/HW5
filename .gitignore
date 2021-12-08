@@ -1,0 +1,5 @@
+.idea
+allure-results
+debug.mjs
+node_modules
+/specs/test.js

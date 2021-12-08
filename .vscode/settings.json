@@ -1,0 +1,25 @@
+{
+    "cucumberautocomplete.steps": [
+        "features/step_definitions/**/*.js",
+    ],
+    "cucumberautocomplete.syncfeatures": "test/features/*.feature",
+    "cucumberautocomplete.smartSnippets": true,
+    "cucumberautocomplete.stepsInvariants": true,
+    "highlight.regexes": {
+        "(<[^:]+?>)": [
+          {
+            "overviewRulerColor": "#ffcc00",
+
+            "color": "#5F7B3C",
+          }
+        ],
+        "(<.+?[:].+?>)": [
+          {
+            "overviewRulerColor": "#ffcc00",
+
+            "color": "#FFA94B",
+          }
+        ],
+      
+      }
+}
