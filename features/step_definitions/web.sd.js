@@ -75,9 +75,9 @@ Then ('I play game till {int} score', async function(targetScore){
         currentBallPos = (await $('#ball').getLocation()).x
         currentPadPos = (await $('#pad').getLocation()).x + 75
         if (currentBallPos > currentPadPos){
-            await browser.keys(['d', 'd', 'd', 'd', 'd', 'd'])
+            await browser.keys(['d', 'd'])
         } else {
-            await browser.keys(['a', 'a', 'a', 'a', 'a', 'a', 'a'])
+            await browser.keys(['a', 'a'])
         }
         currentScore = parseInt( await $('#points').getText(), 10 )
         if (currentScore < targetScore) {
@@ -87,6 +87,7 @@ Then ('I play game till {int} score', async function(targetScore){
         }
     },
     {   timeout: 60000,
+        interval: 50,
         timeoutMsg: `GAME OVER!`
     })
 })

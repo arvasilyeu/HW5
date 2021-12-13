@@ -1,6 +1,6 @@
 Feature: ATM withdraw
 
-  Scenario Outline: should returns "<message>" as operation result 
+  Scenario Outline: Should returns "<message>" as operation result 
     Given my account balance is "<balance>"
     And the ATM contains "<contains>"
     When I withdraw "<withdraw>"

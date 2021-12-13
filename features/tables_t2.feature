@@ -1,6 +1,6 @@
 Feature: Login
 
-  Scenario: should not be loged in
+  Scenario: Should not be loged in
     When I go to "https://viktor-silakov.github.io/course-sut/index.html?quick"
     Then I check the wrong user credentials:
       | login             | password      | message               |
